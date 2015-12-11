@@ -1,0 +1,51 @@
+
+
+\documentclass[12pt,oneside]{amsbook}
+\usepackage[utf8]{inputenc}
+\usepackage[
+backend=bibtex,
+sorting=ynt
+]{biblatex}
+\usepackage{import}
+\usepackage{graphicx}
+\addbibresource{TheBib.bib} %Imports bibliography file
+
+
+\newcommand{\eps}{\varepsilon^t_i}
+\newcommand{\bet}{\beta^t}
+\newcommand{\zet}{z^t}
+\newcommand{\dos}{{t + \tau}}
+\newcommand{\deps}{\varepsilon^\dos_i}
+\newcommand{\teps}{\varepsilon^{t,\dos}_i}
+\newcommand{\et}{\textit{et. al.}}
+
+
+
+
+
+\begin{document}
+
+\begin{table}\label{table:basic_results}
+\caption{The Estimated Coefficients of Equation}~\ref{eq:basline}
+
+\begin{tabular}{lccccc} \hline
+
+VARIABLES & All Percentiles & First Percentile & Second Percentile & Third Percentile \\ \hline
+ &    &  &  &  \\
+Foreclosure Ratio                 &-0.00270 & -0.0169 & -0.0111 & 0.000281 \\
+& \begin{footnotesize}(2.26e-05)\end{footnotesize} & \begin{footnotesize}(0.000167)\end{footnotesize} & \begin{footnotesize}(8.41e-05)\end{footnotesize} & \begin{footnotesize}(0.000167)\end{footnotesize} &  \\
+\vspace{4pt}& \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize}\\
+Foreclosure Ratio Squared         & 4.48e-06 & 0.000281 & 7.71e-05 & 6.70e-06 \\
+&\begin{footnotesize}(6.50e-08)\end{footnotesize} & 
+\begin{footnotesize}(6.70e-06)\end{footnotesize} & \begin{footnotesize}(1.30e-06)\end{footnotesize} & \begin{footnotesize}(6.70e-06)\end{footnotesize} \\ \vspace{4pt}& \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize} & \begin{footnotesize}\end{footnotesize}\\
+Constant                          & 0.0593 &0.0877 &0.0719 &0.0627\\
+& \begin{footnotesize}(0.000591)\end{footnotesize} & 
+\begin{footnotesize}(0.000762)\end{footnotesize} & \begin{footnotesize}(0.000562)\end{footnotesize} & \begin{footnotesize}(3.83e-05)\end{footnotesize}  \\
+
+ &  &  &  &  &  \\
+ \hline
+\end{tabular}
+
+\end{table}
+
+\end{document}
